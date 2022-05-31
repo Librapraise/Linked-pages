@@ -1,0 +1,14 @@
+{
+  "folders": [
+	{
+		"path": "."
+	},
+	{
+		"path": "C:\\Users\\HP\\Documents\\projects\\multi"
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "Linked",
+    "liveServer.settings.port": 5502
+  }
+}

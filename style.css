@@ -350,7 +350,7 @@ h4 {
   background: #f0f0f0;
   border: 2px solid rgb(161, 155, 155);
 }
-#gender {
+.gender {
   width: 100%;
   padding: 8px;
   margin-top: 8px;

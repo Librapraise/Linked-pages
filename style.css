@@ -266,12 +266,16 @@ h4 {
 .ros {
   display: flex;
   justify-content: space-between;
+  margin-top: 70px;
+  margin-bottom: 170px;
 }
 .clpage {
   width: 80%;
   margin: auto;
-  margin-top: 150px;
-  margin-bottom: 170px;
+}
+.clpage h1 {
+  text-align: center;
+  margin-top: 60px;
 }
 .contact-col {
   flex-basis: 48%;
@@ -329,7 +333,12 @@ h4 {
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
+  margin-top: -20px;
   margin-bottom: 150px;
+}
+.register h1 {
+  text-align: center;
+  margin-bottom: 40px;
 }
 .register-col p {
   padding: 0;
@@ -388,10 +397,13 @@ h4 {
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
-  margin-top: 120px;
-  margin-bottom: 230px;
+  margin-top: -16px;
+  margin-bottom: 300px;
 }
-
+.login h1 {
+  text-align: center;
+  margin-bottom: 40px;
+}
 .contact-col h5 {
   font-size: 20px;
   margin-bottom: 5px;

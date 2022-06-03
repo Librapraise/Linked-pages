@@ -8,35 +8,39 @@
 
 header .atag {
   text-decoration: none;
-  color: black;
+  color: white;
+  background-color: rgb(46, 43, 43);
   font-size: 20px;
   font-weight: bold;
 }
-span {
+.header span {
   color: red;
+  background-color: rgb(46, 43, 43);
 }
 nav {
   display: flex;
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
+  background-color: rgb(46, 43, 43);
 }
-nav img {
-  width: 150px;
-}
+
 .nav-links {
   text-align: center;
+  background-color: rgb(46, 43, 43);
 }
 .nav-links ul li {
   list-style: none;
   display: inline-block;
   padding: 6px 10px;
   position: relative;
+  background-color: rgb(46, 43, 43);
 }
 .nav-links ul li a {
   text-decoration: none;
   font-size: 16px;
-  color: black;
+  color: white;
+  background-color: rgb(46, 43, 43);
 }
 
 .nav-links ul li::after {
@@ -333,7 +337,7 @@ h4 {
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
-  margin-top: -20px;
+  margin-top: 1px;
   margin-bottom: 150px;
 }
 .register h1 {
@@ -397,7 +401,7 @@ h4 {
   margin: auto;
   padding-top: 80px;
   padding-bottom: 50px;
-  margin-top: -16px;
+  margin-top: 1px;
   margin-bottom: 300px;
 }
 .login h1 {
@@ -419,6 +423,9 @@ h4 {
   outline: none;
   background: #f0f0f0;
   border: 2px solid rgb(161, 155, 155);
+}
+.login span {
+  color: red;
 }
 .bton {
   border: 2px solid rgb(161, 155, 155);

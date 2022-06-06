@@ -20,6 +20,12 @@
         </div>
       </nav>
     </header>
+    <img
+      class="close"
+      id="close"
+      src="/img/external-hamburger-menu-bar-with-parallel-navigation-button-basic-fresh-tal-revivo.png"
+    />
+
     <!---contact page--->
     <section class="clpage">
       <h1>CONTACT ME</h1>
@@ -99,5 +105,18 @@
       </div>
       <p>Made with <small class="fa">HTML & CSS</small> by Libra</p>
     </footer>
+    <script>
+      var menuBtn = document.getElementById("close");
+      var sideNav = document.getElementById("navlinks");
+
+      sideNav.style.right = "-350px";
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-350px") {
+          sideNav.style.right = "0";
+        } else {
+          sideNav.style.right = "-350px";
+        }
+      };
+    </script>
   </body>
 </html>

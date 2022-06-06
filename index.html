@@ -20,6 +20,11 @@
         </div>
       </nav>
     </header>
+    <img
+      class="close"
+      id="close"
+      src="/img/external-hamburger-menu-bar-with-parallel-navigation-button-basic-fresh-tal-revivo.png"
+    />
 
     <section class="about">
       <div class="row">
@@ -64,12 +69,12 @@
         <div class="row-col">
           <h3>My Priorities</h3>
           <ul>
-            <li>Listening to music</li>
-            <li>Watching movies</li>
-            <li>Googling</li>
-            <li>Cooking</li>
-            <li>Watching football</li>
-            <li>Playing video games</li>
+            <li>Finances</li>
+            <li>Mental Health</li>
+            <li>Self-Improvement</li>
+            <li>Quality Time With Family</li>
+            <li>Healthy Relationships</li>
+            <li>Health & Hygiene</li>
           </ul>
         </div>
         <div class="row-col set">
@@ -78,7 +83,9 @@
             <li>Microsoft Word</li>
             <li>Powerpoint</li>
             <li>Photography</li>
+            <li>Python</li>
             <li>HTML & CSS</li>
+            <li>Git & Github</li>
             <li>Electrician</li>
           </ul>
         </div>
@@ -116,7 +123,19 @@
       <p>Made with <small class="fa">HTML & CSS</small> by Libra</p>
     </footer>
     
-      
+    <script>
+      var menuBtn = document.getElementById("close");
+      var sideNav = document.getElementById("navlinks");
+
+      sideNav.style.right = "-350px";
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-350px") {
+          sideNav.style.right = "0";
+        } else {
+          sideNav.style.right = "-350px";
+        }
+      };
+    </script>
     </section>
   </body>
 </html>

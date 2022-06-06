@@ -14,7 +14,7 @@ header .atag {
   font-weight: bold;
 }
 .header span {
-  color: red;
+  color: tomato;
   background-color: rgb(46, 43, 43);
 }
 nav {
@@ -47,7 +47,7 @@ nav {
   content: "";
   width: 0%;
   height: 0.18em;
-  background: rgb(248, 4, 4);
+  background: tomato;
   display: block;
   margin: auto;
   transition: 0.5s;
@@ -55,14 +55,17 @@ nav {
 .nav-links ul li:hover::after {
   width: 100%;
 }
+#close {
+  display: none;
+}
 
 .about {
   width: 80%;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 40px;
   padding-bottom: 50px;
-  margin-top: 50px;
-  margin-bottom: 80px;
+  margin-top: 30px;
+  margin-bottom: 40px;
 }
 
 .about h3 {
@@ -119,7 +122,7 @@ nav {
 .me {
   width: 80%;
   margin: auto;
-  padding-top: 80px;
+  padding-top: 20px;
   padding-bottom: 50px;
   border-radius: 10px;
 }
@@ -444,4 +447,155 @@ h4 {
   background-color: tomato;
   border: none;
   transition: 0.5s;
+}
+
+@media only screen and (max-width: 770px) {
+  nav a {
+    padding: 5px;
+  }
+
+  .nav-links {
+    margin-top: -5px;
+    position: fixed;
+    right: -350px;
+    top: 0;
+    height: 100vh;
+    background: rgb(46, 43, 43);
+    width: 50%;
+    z-index: 2;
+    transition: 1s ease-in-out;
+  }
+  .nav-links ul {
+    margin-top: 8em;
+  }
+  .nav-links ul li {
+    display: block;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+
+  .nav-links ul li a:hover {
+    background-color: thistle;
+    transition: 1s;
+    width: 100%;
+  }
+
+  .nav-links ul li::after {
+    content: "";
+    width: 0%;
+    height: 0.18em;
+    background: tomato;
+    display: none;
+    margin: auto;
+    transition: 0.5s;
+  }
+  .nav-links ul li:hover::after {
+    width: 100%;
+  }
+
+  #close {
+    display: block;
+    width: 26px;
+    position: fixed;
+    right: 30px;
+    top: 0;
+    margin-top: 13px;
+    cursor: pointer;
+    z-index: 2;
+  }
+
+  /*--header--*/
+  .about {
+    padding-top: 0px;
+    height: 100vh;
+    padding-bottom: 10px;
+  }
+  .about h1 {
+    font-size: 35px;
+  }
+  .about h3 {
+    font-size: 20px;
+  }
+  .about small {
+    font-size: 20px;
+  }
+  .about a {
+    padding: 3px 6px;
+  }
+  .row {
+    display: block;
+  }
+  .about-col img {
+    width: 400px;
+  }
+
+  /*--about--*/
+  .me {
+    padding-top: -10px;
+    margin-top: -120px;
+    margin-bottom: -10px;
+  }
+  .me h1 {
+    font-size: 23px;
+  }
+  .me p {
+    font-size: 15px;
+  }
+  .rows {
+    display: block;
+    text-align: center;
+    margin-left: 0px;
+    margin: 25px 0 0px;
+    padding: 4px;
+    padding-bottom: 2px;
+  }
+  .row-col {
+    margin: 20px;
+  }
+  .row-col h1 {
+    font-size: 20px;
+  }
+  .row-col ul li {
+    font-size: 12px;
+  }
+  /*--contact---*/
+  .conme h1 {
+    font-size: 28px;
+  }
+  .conme a {
+    padding: 7px 10px;
+  }
+  /*--footer---*/
+
+  h4 {
+    font-size: 28px;
+  }
+  .footer p {
+    font-size: 14px;
+  }
+  .face {
+    width: 50px;
+  }
+  .twitter {
+    width: 50px;
+  }
+  .insta {
+    width: 50px;
+  }
+  .linkedin {
+    width: 50px;
+  }
+  /*--contact--*/
+  .ros {
+    display: block;
+  }
+  /*---register--*/
+  .register {
+    margin-bottom: 100px;
+  }
+  /*--login--*/
+  .login {
+    margin-bottom: 100px;
+  }
 }
